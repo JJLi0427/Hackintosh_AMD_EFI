@@ -1,5 +1,7 @@
 # Hackintosh_AMD_EFI
-Share Hackintosh EFI for AMD CPU Rayzen 5600H and 5800H, Lenovo Xiaoxin Pro 16, it can be use on Sonoma
+Share Hackintosh EFI for AMD CPU Rayzen 5600H and 5800H, Lenovo Xiaoxin Pro 16, it can be use on Sonoma and olders  
+* **How to use:**  
+Clone this repo and save the floder match your CPU, remand the floder to OC and move it to the computer boot partition
 
 ## CPU Kernal patch
 It may change when a new system release: <https://github.com/AMD-OSX/AMD_Vanilla>
