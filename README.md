@@ -1,2 +1,21 @@
 # Hackintosh_AMD_EFI
-Share Hackintosh EFI for AMD CPU Rayzen 5600H and 5800H, Lenovo Xiaoxin Pro 16
+Share Hackintosh EFI for AMD CPU Rayzen 5600H and 5800H, Lenovo Xiaoxin Pro 16, it can be use on Sonoma
+
+## CPU Kernal patch
+It may change when a new system release: <https://github.com/AMD-OSX/AMD_Vanilla>
+
+## Nootedred driver
+It is a important driver for AMD graphics card: <https://github.com/ChefKissInc/NootedRed>
+
+## Microphone and sound card
+Apple ALC driver only use for zen microphone: <https://github.com/qhuyduong/AppleALC>
+
+## Network card Intel
+Intel AX210 Wi-Fi: <https://github.com/OpenIntelWireless/itlwm/issues/883>  
+Intel Bluetooth: <https://github.com/OpenIntelWireless/IntelBluetoothFirmware/releases>  
+BluetoothFixup driver: <https://github.com/zxystd/BrcmPatchRAM>  
+
+## HDPI
+```bash
+sh -c "$(curl -fsSL https://html.sqlsec.com/hidpi.sh)"
+```
