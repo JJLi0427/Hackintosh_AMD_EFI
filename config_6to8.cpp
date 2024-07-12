@@ -3,7 +3,12 @@
 #include <vector>
 #include <string>
 
-void modifyLine(std::vector<std::string>& lines, int lineNumber, const std::string& oldContent, const std::string& newContent) {
+void modifyLine(
+    std::vector<std::string>& lines, 
+    int lineNumber, 
+    const std::string& oldContent, 
+    const std::string& newContent
+) {
     if (lineNumber >= 0 && lineNumber < lines.size()) {
         size_t pos = lines[lineNumber].find(oldContent);
         if (pos != std::string::npos) {
@@ -27,10 +32,30 @@ int main() {
     }
     fileIn.close();
 
-    modifyLine(lines, 935, "<data>uAYAAAAA</data>", "<data>uAgAAAAA</data>");
-    modifyLine(lines, 965, "<data>ugYAAAAA</data>", "<data>uggAAAAA</data>");
-    modifyLine(lines, 995, "<data>ugYAAACQ</data>", "<data>uggAAACQ</data>");
-    modifyLine(lines, 1025, "<data>ugYAAAA=</data>", "<data>uggAAAA=</data>");
+    modifyLine(
+        lines, 
+        935, 
+        "<data>uAYAAAAA</data>", 
+        "<data>uAgAAAAA</data>"
+    );
+    modifyLine(
+        lines, 
+        965, 
+        "<data>ugYAAAAA</data>", 
+        "<data>uggAAAAA</data>"
+    );
+    modifyLine(
+        lines, 
+        995, 
+        "<data>ugYAAACQ</data>", 
+        "<data>uggAAACQ</data>"
+    );
+    modifyLine(
+        lines, 
+        1025, 
+        "<data>ugYAAAA=</data>", 
+        "<data>uggAAAA=</data>"
+    );
 
     std::ofstream fileOut(filename);
     if (!fileOut) {
